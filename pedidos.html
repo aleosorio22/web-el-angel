@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedir en Línea - El Angel</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Cafe El Angel</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="ElAngel.html">Inicio</a></li>
+            <li><a href="menu.html">Ver Menú</a></li>
+            <li><a href="pedidos.html">Pedir en Línea</a></li>
+            <li><a href="reservas.html">Reservaciones</a></li>
+        </ul>
+    </nav>
+
+    <section id="pedidos-en-linea">
+        <div class="menu-categorias">
+            <form id="categorias-form">
+                <label>
+                    <input type="radio" name="categoria" value="bebidas" checked>
+                    Bebidas
+                </label>
+                <label>
+                    <input type="radio" name="categoria" value="pizzas">
+                    Pizzas personales
+                </label>
+                <!-- Agrega el resto de las categorías de la misma manera -->
+            </form>
+        </div>
+    
+        <div class="productos">
+        <h3>Pedir en Línea</h3>
+            <div id="menu-container">
+                <p>hola</p>
+                <!-- Aquí es donde se llenará el menú dinámicamente con JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 El Angel</p>
+    </footer>
+
+    <script src="./script/codigo.js"></script>
+
+</body>
+</html>

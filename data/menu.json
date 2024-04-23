@@ -1,0 +1,126 @@
+{
+    "menu": [
+        {
+            "categoria": "bebidas",
+            "id": 1,
+            "nombre": "Café Americano",
+            "descripcion": "Cafe negro con un exquisito aroma.",
+            "precio": 12.00,
+            "imagen": "americano.jpg"
+        },
+        {
+            "categoria": "bebidas",
+            "id": 2,
+            "nombre": "Café Con Leche",
+            "descripcion": "Café con leche entera, descremada o deslactosada.",
+            "precio": 12.00,
+            "imagen": "americano.jpg"
+        },
+        {
+            "categoria": "bebidas",
+            "id": 3,
+            "nombre": "Capuchino",
+            "descripcion": "Delicioso cafe, con leche espumada.",
+            "precio": 14.00,
+            "imagen": "americano.jpg"
+        },
+        {
+            "categoria": "bebidas",
+            "id": 4,
+            "nombre": "Mocachino",
+            "descripcion": "Cafe con leche espumada y chocolate.",
+            "precio": 17.00,
+            "imagen": "americano.jpg"
+        },
+        {
+            "categoria": "bebidas",
+            "id": 5,
+            "nombre": "Latte",
+            "descripcion": "Cafe con leche semiespumada",
+            "precio": 17.00,
+            "imagen": "americano.jpg"
+        },
+        {
+            "categoria": "bebidas",
+            "id": 6,
+            "nombre": "Chocolate Caliente",
+            "descripcion": "Chocolate con leche caliente",
+            "precio": 16.00,
+            "imagen": "americano.jpg"
+        },
+        {
+            "categoria": "bebidas",
+            "id": 7,
+            "nombre": "Té de hierbas o frutal",
+            "descripcion": "Variedad de té cómo frutos rojos, arándanos, etc.",
+            "precio": 15.00,
+            "imagen": "americano.jpg",
+            "extras": [
+                { "nombre": "Miel", "precio": 1.50 },
+                { "nombre": "Doble Té", "precio": 2.00 }
+              ]
+        },
+        {
+            "categoria": "bebidas",
+            "id": 8,
+            "nombre": "Té simple",
+            "descripcion": "Té de manzanilla o té de limón",
+            "precio": 12.00,
+            "imagen": "americano.jpg",
+            "extras": [
+                { "nombre": "Miel", "precio": 1.50 },
+                { "nombre": "Doble Té", "precio": 2.00 }
+              ]
+        },
+        {
+            "categoria": "pizzas personales",
+            "id": 9,
+            "nombre": "Pizza de Peperoni",
+            "descripcion": "Pizza con salsa roja",
+            "precio": 24.00,
+            "imagen": "americano.jpg",
+            "extras": [
+                { "nombre": "Doble Queso", "precio": 3.00 },
+                { "nombre": "Doble Pepperoni", "precio": 4.50 },
+                { "nombre": "Extra Champiñones", "precio": 2.00 }
+              ]
+          },
+          {
+            "categoria": "hamburguesas",
+            "id": 10,
+            "nombre": "Combo 1 de hamburguesa",
+            "descripcion": "Hamburguesa de 1/4 de libra",
+            "precio": 39.00,
+            "imagen": "americano.jpg",
+            "extras": [
+                { "nombre": "Queso Cheddar", "precio": 1.50 },
+                { "nombre": "Tocino", "precio": 2.00 }
+              ]
+          },
+          {
+            "categoria": "refacciones",
+            "id": 11,
+            "nombre": "Tostada de salpicon",
+            "descripcion": "Con cebolla, perejil, salsa y queso",
+            "precio": 5.00,
+            "imagen": "americano.jpg"
+        },
+        {
+            "categoria": "postres",
+            "id": 12,
+            "nombre": "3 leches pequeño",
+            "descripcion": "Pastel pequeño",
+            "precio": 8.00,
+            "imagen": "americano.jpg"
+          },
+          {
+            "categoria": "postres",
+            "id": 13,
+            "nombre": "Selva negra pequeño",
+            "descripcion": "Pastel personal de selva negra",
+            "precio": 5.00,
+            "imagen": "americano.jpg"
+          }
+    ]
+}
+ 
