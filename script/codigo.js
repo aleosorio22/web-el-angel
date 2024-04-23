@@ -75,7 +75,7 @@ document.addEventListener("DOMContentLoaded", function () {
             divProducto.classList.add("producto");
 
             const imagenProducto = document.createElement("img");
-            imagenProducto.src = `../img/${producto.imagen}`;
+            imagenProducto.src = `./img/${producto.imagen}`;
             imagenProducto.alt = producto.nombre;
             imagenProducto.classList.add("producto-imagen");
 
