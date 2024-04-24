@@ -126,12 +126,7 @@ footer {
 
 .seccion-anuncios {
     padding: 20px;
-    background-color: #f8f8f8; /* Color de fondo de la sección de anuncios */
-}
-
-.pedido-container {
-    text-align: center;
-    margin-bottom: 20px;
+    background-color: black; /* Color de fondo de la sección de anuncios */
 }
 
 .pedido-container h3 {
@@ -150,7 +145,7 @@ footer {
 
 .seccion-anuncios {
     padding: 20px;
-    background-color: #f8f8f8; /* Color de fondo de la sección de anuncios */
+    background-image: url('../img/bg.jpg');
     text-align: center;
 }
 
@@ -493,6 +488,16 @@ main {
         min-height: 100vh;
         display: flex;
         flex-direction: column;
+    }
+
+    .anuncio-container {
+        display: block;
+        text-align: center;
+    }
+
+    .anuncio{
+        width: 100%;
+        margin: 10px auto;
     }
 
     aside {
