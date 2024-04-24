@@ -1,15 +1,15 @@
 {
     "menu": [
         {
-            "categoria": "bebidas",
+            "categoria": "bebidas calientes",
             "id": 1,
             "nombre": "Café Americano",
             "descripcion": "Cafe negro con un exquisito aroma.",
-            "precio": 12.00,
+            "precio": 10.00,
             "imagen": "americano.jpg"
         },
         {
-            "categoria": "bebidas",
+            "categoria": "bebidas calientes",
             "id": 2,
             "nombre": "Café Con Leche",
             "descripcion": "Café con leche entera, descremada o deslactosada.",
@@ -17,7 +17,7 @@
             "imagen": "americano.jpg"
         },
         {
-            "categoria": "bebidas",
+            "categoria": "bebidas calientes",
             "id": 3,
             "nombre": "Capuchino",
             "descripcion": "Delicioso cafe, con leche espumada.",
@@ -25,7 +25,7 @@
             "imagen": "americano.jpg"
         },
         {
-            "categoria": "bebidas",
+            "categoria": "bebidas calientes",
             "id": 4,
             "nombre": "Mocachino",
             "descripcion": "Cafe con leche espumada y chocolate.",
@@ -33,15 +33,15 @@
             "imagen": "americano.jpg"
         },
         {
-            "categoria": "bebidas",
+            "categoria": "bebidas calientes",
             "id": 5,
             "nombre": "Latte",
             "descripcion": "Cafe con leche semiespumada",
-            "precio": 17.00,
+            "precio": 14.00,
             "imagen": "americano.jpg"
         },
         {
-            "categoria": "bebidas",
+            "categoria": "bebidas calientes",
             "id": 6,
             "nombre": "Chocolate Caliente",
             "descripcion": "Chocolate con leche caliente",
@@ -49,11 +49,11 @@
             "imagen": "americano.jpg"
         },
         {
-            "categoria": "bebidas",
+            "categoria": "bebidas calientes",
             "id": 7,
             "nombre": "Té de hierbas o frutal",
             "descripcion": "Variedad de té cómo frutos rojos, arándanos, etc.",
-            "precio": 15.00,
+            "precio": 16.00,
             "imagen": "americano.jpg",
             "extras": [
                 { "nombre": "Miel", "precio": 1.50 },
@@ -61,28 +61,98 @@
               ]
         },
         {
-            "categoria": "bebidas",
+            "categoria": "bebidas calientes",
             "id": 8,
             "nombre": "Té simple",
             "descripcion": "Té de manzanilla o té de limón",
-            "precio": 12.00,
+            "precio": 14.00,
             "imagen": "americano.jpg",
             "extras": [
                 { "nombre": "Miel", "precio": 1.50 },
                 { "nombre": "Doble Té", "precio": 2.00 }
               ]
+        },
+        {
+            "categoria": "bebidas calientes",
+            "id": 8,
+            "nombre": "Té Chai",
+            "descripcion": "Original, manzana canela o vainilla",
+            "precio": 18.00,
+            "imagen": "americano.jpg"
         },
         {
             "categoria": "pizzas personales",
             "id": 9,
             "nombre": "Pizza de Peperoni",
-            "descripcion": "Pizza con salsa roja",
-            "precio": 24.00,
+            "descripcion": "Con salsa roja",
+            "precio": 26.00,
             "imagen": "americano.jpg",
             "extras": [
                 { "nombre": "Doble Queso", "precio": 3.00 },
                 { "nombre": "Doble Pepperoni", "precio": 4.50 },
                 { "nombre": "Extra Champiñones", "precio": 2.00 }
+              ]
+          },
+          {
+            "categoria": "pizzas personales",
+            "id": 9,
+            "nombre": "Pizza de jamon",
+            "descripcion": "Con salsa roja",
+            "precio": 26.00,
+            "imagen": "americano.jpg",
+            "extras": [
+                { "nombre": "Doble Queso", "precio": 8.00 },
+                { "nombre": "Doble Pepperoni", "precio": 8.00 }
+              ]
+          },
+          {
+            "categoria": "pizzas personales",
+            "id": 9,
+            "nombre": "Pizza de camarón",
+            "descripcion": "Con salsa blanca, cebolla y chile pimiento",
+            "precio": 33.00,
+            "imagen": "americano.jpg",
+            "extras": [
+                { "nombre": "Doble Queso", "precio": 8.00 },
+                { "nombre": "Doble Camarón", "precio": 12.00 }
+              ]
+          },
+          {
+            "categoria": "pizzas personales",
+            "id": 9,
+            "nombre": "Pizza del rancho",
+            "descripcion": "Con carne asada, cebollines y salsa roja",
+            "precio": 29.00,
+            "imagen": "americano.jpg",
+            "extras": [
+                { "nombre": "Doble queso", "precio": 8.00 },
+                { "nombre": "Doble carne", "precio": 10.00 },
+                { "nombre": "doble cebollín", "precio": 5.00 }
+              ]
+          },
+          {
+            "categoria": "pizzas personales",
+            "id": 9,
+            "nombre": "Pizza de pollo",
+            "descripcion": "Pollo desmenuzado, acompañado de loroco y salsa blanca",
+            "precio": 29.00,
+            "imagen": "americano.jpg",
+            "extras": [
+                { "nombre": "Doble queso", "precio": 8.00 },
+                { "nombre": "Doble pollo", "precio": 10.00 },
+                { "nombre": "Doble loroco", "precio": 5.00 }
+              ]
+          },
+          {
+            "categoria": "pizzas personales",
+            "id": 9,
+            "nombre": "Pizza hawaiana",
+            "descripcion": "Con salsa roja, jamón y piña",
+            "precio": 29.00,
+            "imagen": "americano.jpg",
+            "extras": [
+                { "nombre": "Doble queso", "precio": 8.00 },
+                { "nombre": "Doble piña", "precio": 8.0 }
               ]
           },
           {
@@ -103,7 +173,7 @@
             "nombre": "Tostada de salpicon",
             "descripcion": "Con cebolla, perejil, salsa y queso",
             "precio": 5.00,
-            "imagen": "americano.jpg"
+            "imagen": "tostadas.jpg"
         },
         {
             "categoria": "postres",
