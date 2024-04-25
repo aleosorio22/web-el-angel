@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>El Angel</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/index_style.css">
 </head>
 <body>
 
     <header class="header-principal">
         <a href="index.html" class="logo-container">
-            <img src="./img/LOGO.png" alt="Cafe El Angel Logo">
+            <img src="./img/white.logo-nobg.png" alt="Cafe El Angel Logo">
         </a>
         <nav>
             <ul class="barra-navegacion">
@@ -21,39 +21,24 @@
                 <li><a href="./reservas.html" class="header-reservas">Reservaciones</a></li>
             </ul>
         </nav>
-        <div class="telefono-container">
-            <img src="./img/telefono.png" alt="Ícono de Teléfono">
-            <p>4689 0147</p>
-        </div>
         <ul class="cat-menu-mobile">
-            <li>
-                <a class="boton-menu boton-carrito" href="./carrito.html">
-                    <i class="bi bi-cart-fill"></i> <span id="numerito" class="numerito">0</span>
-                </a>
-            </li>
+            <a href="tel:46890147" class="boton-menu boton-telefono">
+                <i class="bi bi-telephone"></i>
+            </a>
+            <a href="https://api.whatsapp.com/send?phone=50231667151" class="boton-menu boton-whatsapp">
+                <i class="bi bi-whatsapp"></i>
+            </a>
+            <a href="./carrito.html" class="boton-menu boton-carrito">
+                <i class="bi bi-cart-fill"></i> <span id="numero" class="numerito">0</span>
+            </a>
+            <a id="submenu-btn" class="boton-menu submenu-btn">
+                <i class="bi bi-list"></i>
+            </a>
         </ul>
 
     </header>
-    <div class="mobile-bottom-content">
-        <div class="buscar-container-mobile">
-            <input type="text" placeholder="Buscar...">
-            <button>Buscar</button>
-        </div>
-        <nav class="mobile-nav">
-            <ul class="barra-navegacion">
-                <li><a href="./menu.html" >Ver Menú</a></li>
-                <li><a href="./onlineOrder.html">Pedir en Línea</a></li>
-                <li><a href="./reservas.html">Reservaciones</a></li>
-            </ul>
-        </nav>
-    </div>
+    
 
-
-
-    <section id="portada">
-        <h2>BIENVENIDO</h2>
-        <p>Bienvenido a la pagina de cafe el angel, donde podras conocer mas acerca de nosotros </p>
-    </section>
     <div class="seccion-anuncios">
         <div class="pedido-container">
             <h3>¡Comienza tu pedido!</h3>
@@ -78,6 +63,7 @@
     <footer>
         <p>&copy; 2023 El Angel</p>
     </footer>
+    <script src="script/codigo.js"></script>
 </body>
 </html>
 
