@@ -1,63 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rowdies:wght@300&display=swap');
+
 :root{
     --clr-main: #22B14C;
     --clr-white: #ececec;
     --clr-gray: #e2e2e2;
     --clr-red: #961818;
     --clr-secundary: #183E0C;
-
+    --clr-lighth: #7E7D7A;
 }
+
+/*generales*/
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Rubik', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 body{
     margin-top: 0px;
+    background-image: url("../img/bg_coffee.png");
+    background-size: cover;
 }
+
+/*header y parte superior*/
 
 .header-principal {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0px 20px;
-    background-color: var(--clr-secundary);
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    background-color: transparent;
 }
 
 .logo-container img {
     width: 110px; 
 }
-
-.telefono-container {
-    display: flex;
-    align-items: center;
-}
-
-.telefono-container img {
-    width: 20px; 
-    margin-right: 5px;
-}
-
-.buscar-container, .buscar-container-mobile {
-    display: flex;
-    align-items: center;
-    
-}
-
-.buscar-container, .buscar-container-mobile input {
-    padding: 5px;
-    margin-right: 5px;
-    border-radius: 0.65rem;
-}
-
-.buscar-container, .buscar-container-mobile button {
-    padding: 5px 10px;
-    border-radius: 0.65rem;
-}
-
 
 .barra-navegacion {
     list-style: none;
@@ -77,11 +56,8 @@ body{
     font-size: 16px;
 }
 
-#portada {
-    text-align: center;
-    padding: 20px;
-    background-color: var(--clr-main);
-}
+/*Landing*/
+
 
 footer {
     background-color: var(--clr-main);
@@ -92,62 +68,112 @@ footer {
 
 .seccion-anuncios {
     padding: 20px;
-    background-color: black; /* Color de fondo de la sección de anuncios */
-}
-
-.pedido-container h3 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-}
-
-.pedido-container button {
-    padding: 10px 20px;
-    font-size: 1rem;
-    background-color: #4b33a8; /* Color de fondo del botón */
-    color: #fff; /* Color del texto del botón */
-    border: none;
-    cursor: pointer;
-}
-
-.seccion-anuncios {
-    padding: 20px;
-    background-image: url('../img/bg.jpg');
-    text-align: center;
-}
-
-.pedido-container {
-    margin-bottom: 20px;
-}
-
-.pedido-container h3 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-}
-
-.pedido-container button {
-    padding: 10px 20px;
-    font-size: 1rem;
-    background-color: #4b33a8; /* Color de fondo del botón */
-    color: #fff; /* Color del texto del botón */
-    border: none;
-    cursor: pointer;
-}
-
-.anuncio-container {
+    text-align: left;
+    margin-left: 40px;
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
 }
 
-.anuncio {
-    width: calc(33.33% - 20px); /* 33.33% del ancho menos el espacio entre ellos */
-    margin: 10px;
+.pedido-container{
+    flex: -1;
+    margin-right: 26%;
 }
 
-.anuncio img {
-    width: 100%;
-    border-radius: 1rem; /* Añade bordes redondeados para un aspecto más estilizado */
+
+.pedido-container h2 {
+    font-size: 40px;
+    margin-bottom: 10px;
+    color: var(--clr-secundary);
 }
+
+.highlight-elangel{
+    font-size: 40px;
+    color: var(--clr-main);
+}
+
+.pedido-container p {
+    color: var(--clr-lighth);
+    font-size: 18px;
+}
+
+/*botones landing*/
+
+.botones-landing{
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+}
+
+.boton-ordenar-landing{
+    background-color: var(--clr-secundary);
+    color: var(--clr-white);
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 33px;
+    margin-right: 10px;
+}
+
+.boton-ordenar-landing i {
+    background-color: var(--clr-main);
+    color: var(--clr-white);
+    padding: 5px;
+    border-radius: 100%;
+    font-size: 12px;
+}
+
+.mostrar-menu-landing{
+    color: var(--clr-main);
+    cursor: pointer;
+}
+
+/*producto en exhibicion*/
+.producto-exhibicion {
+    position: relative;
+    width: 330px;
+    height: 330px;
+    border-radius: 50%;
+    background-color: var(--clr-secundary);
+    display: flex; /* Utilizamos flexbox para centrar la imagen */
+    justify-content: center; /* Centramos horizontalmente */
+    align-items: center; /* Centramos verticalmente */
+}
+
+.producto-exhibicion img {
+    max-width: 90%;
+    height: auto; /* Asegura que la imagen no se desborde del contenedor */
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.etiqueta {
+    position: absolute;
+    border-radius: 10px;
+    background-color: var(--clr-white);
+    color: var(--clr-secundary);
+    padding: 5px 10px;
+    font-weight: 600;
+    font-size: 24px;
+    border-style: solid;
+    border-color: var(--clr-gray);
+}
+
+.etiqueta.nombre {
+    top: 5px;
+    left: 5px; 
+}
+
+.etiqueta.precio {
+    bottom: 5px; /* Ajusta la posición verticalmente */
+    right: 5px; /* Ajusta la posición horizontalmente */
+    background-color: var(--clr-white);
+    color: var(--clr-secundary);
+}
+
+
+
+
 
 .cat-menu-mobile{
     display: none;
@@ -164,14 +190,48 @@ footer {
         display: none;
     }
 
-    .anuncio-container {
-        display: block;
+    .seccion-anuncios{
+        flex-direction: column;
+        margin-left: 0;
+    }
+
+    .pedido-container{
+        margin-right: 0;
+    }
+
+    .pedido-container h2 {
+        font-size: 25px;
         text-align: center;
     }
 
-    .anuncio{
-        width: 100%;
-        margin: 10px auto;
+    .highlight-elangel {
+        font-size: 25px;
+    }
+
+    .pedido-container p {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .producto-exhibicion{
+        width: 200px;
+        height: 200px;
+        margin-top: 50%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .etiqueta {
+        position: absolute;
+        border-radius: 10px;
+        background-color: var(--clr-white);
+        color: var(--clr-secundary);
+        padding: 5px 10px;
+        font-weight: 600;
+        font-size: 16px; /* Modifica este valor según lo necesites */
+        border-style: solid;
+        border-color: var(--clr-gray);
     }
 
     .cat-menu-mobile {
