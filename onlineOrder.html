@@ -11,13 +11,12 @@
 <body>
     <header class="header-principal">
         <a href="index.html" class="logo-container">
-            <img src="./img/white.logo-nobg.png" alt="Cafe El Angel Logo">
+            <img src="./img/LOGO.png" alt="Cafe El Angel Logo">
         </a>
         <nav>
             <ul class="barra-navegacion">
                 <li><a href="index.html" class="header-inicio" >Inicio</a></li>
                 <li><a href="./menu.html" class="header-ver-menu" >Ver Menú</a></li>
-                <li><a href="./onlineOrder.html" class="header-order-online" >Pedir en Línea</a></li>
                 <li><a href="./reservas.html" class="header-reservas">Reservaciones</a></li>
             </ul>
         </nav>
@@ -46,7 +45,25 @@
             <nav>
                 <ul class="cat-menu">
                     <li>
-                        <button class="boton-menu boton-categoria active">Todos los productos</button>
+                        <button class="boton-menu boton-categoria active" data-categoria="desayunos">Todos los productos</button>
+                    </li>
+                    <li>
+                        <button class="boton-menu boton-categoria">Desayunos</button>
+                    </li>
+                    <li>
+                        <button class="boton-menu boton-categoria">Desayunos lights</button>
+                    </li>
+                    <li>
+                        <button class="boton-menu boton-categoria">Especialidades</button>
+                    </li>
+                    <li>
+                        <button class="boton-menu boton-categoria">Desayunos dulces</button>
+                    </li>
+                    <li>
+                        <button class="boton-menu boton-categoria">Menu infantil</button>
+                    </li>
+                    <li>
+                        <button class="boton-menu boton-categoria">Almuerzos</button>
                     </li>
                     <li>
                         <button class="boton-menu boton-categoria">Pizzas personales</button>
@@ -87,15 +104,15 @@
     <div id="modal" class="modal">
         <div class="modal-content">
             <span class="close" id="close-modal">&times;</span>
-            <label for="notas">Agrega notas para tu pedido:</label>
-            <textarea id="notas" rows="4"></textarea>
-    
+            <h2 id="nombre-producto-modal">Nombre del Producto</h2>
+            <p id="descripcion-producto-modal">Descripción del Producto</p>
+            <label for="notas">Agrega notas para su pedido (opcional):</label>
+            <textarea id="notas" rows="3"></textarea>
             <div id="extras-container">
                 <h3>Extras:</h3>
                 <div id="extras-checkboxes"></div>
             </div>
-    
-            <button id="agregar-carrito">Agregar al carrito</button>
+            <button class="modal-boton-agregar" id="agregar-carrito">Agregar al carrito</button>
         </div>
     </div>
     

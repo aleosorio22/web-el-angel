@@ -6,7 +6,7 @@
     --clr-gray: #e2e2e2;    
     --clr-red: #961818;
     --clr-secundary: #183E0C;
-
+    --clr-bg: #F6EBD9;
 }
 
 *{
@@ -34,7 +34,7 @@ a {
 .wrapper{
     display: grid;
     grid-template-columns: 1fr 4fr;
-    background-color: var(--clr-main) ;
+    background-color: var(--clr-secundary) ;
 }
 
 aside{
@@ -48,6 +48,7 @@ aside{
     flex-direction: column;
     justify-content: space-between;
 }
+
 .cat-logo{
     font-weight: 400;
     font-size: 1.3rem;
@@ -73,8 +74,8 @@ aside{
 }
 
 .boton-menu.active {
-    background-color: var(--clr-white);
-    color: var(--clr-main);
+    background-color: var(--clr-bg);
+    color: var(--clr-secundary);
     width: 100%;
     border-top-left-radius: 1rem;
     border-bottom-left-radius: 1rem;
@@ -90,7 +91,7 @@ aside{
     right: 0;
     background-color: transparent;
     border-bottom-right-radius: .5rem;
-    box-shadow: 0 1rem 0 var(--clr-white);
+    box-shadow: 0 1rem 0 var(--clr-bg);
 }
 
 .boton-menu.active::after {
@@ -102,7 +103,7 @@ aside{
     right: 0;
     background-color: transparent;
     border-top-right-radius: .5rem;
-    box-shadow: 0 -1rem 0 var(--clr-white);
+    box-shadow: 0 -1rem 0 var(--clr-bg);
 }
 
 .boton-carrito{
@@ -117,7 +118,7 @@ aside{
 }
 
 main {
-    background-color: var(--clr-white);
+    background-color: var(--clr-bg);
     margin: 1rem;
     margin-left: 0;
     border-radius: 2rem;
@@ -125,7 +126,7 @@ main {
 }
 
 .titulo-main {
-    color: var(--clr-main);
+    color: var(--clr-secundary);
     margin-bottom: 2rem;
 }
 
@@ -141,7 +142,7 @@ main {
 }
 
 .producto-detalles {
-    background-color: var(--clr-main);
+    background-color: var(--clr-secundary);
     color: var(--clr-white);
     padding: .5rem;
     border-radius: 1rem;
@@ -152,14 +153,18 @@ main {
     gap: 0.25rem;
 }
 
-.producto-titulo{
+.producto-nombre{
     font-size: 1rem;
+}
+
+.producto-descripcion{
+    display: none;
 }
 
 .producto-agregar{
     border: 0; 
     background-color: var(--clr-white);
-    color: var(--clr-main);
+    color: var(--clr-secundary);
     padding: .4rem;
     text-transform: uppercase;
     border-radius: 2rem;
@@ -175,38 +180,75 @@ main {
 
 /**MODAL**/
 .modal {
-    display: none;
+    display: none; 
     position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-  }
-  
-  .modal-content {
-    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: #fff;
+    border-radius: 33px; 
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); 
     padding: 20px;
-    border-radius: 5px;
-    text-align: center;
-  }
+    z-index: 9999;
+    background-color: rgba(24, 62, 12, 0.8);
+    padding: 5vw; 
+}
+
+
+.modal-content {
+    color: var(--clr-white);
+}
   
-  .close {
+.close { 
     position: absolute;
     top: 10px;
     right: 10px;
-    font-size: 20px;
     cursor: pointer;
-  }
-  
-  textarea {
+    color:var(--clr-secundary);
+    font-size: 20px;
+}
+ 
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+
+.modal-content {
+    transition: all 0.3s ease;
+}
+
+.modal-boton-agregar {
+    background-color: var(--clr-main); /* Color de fondo */
+    color: var(--clr-white); /* Color del texto */
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 33px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.modal-boton-agregar:hover {
+    background-color: var(--clr-secundary); /* Cambio de color al pasar el ratón */
+}
+
+.modal-content {
+    font-family: 'Poppins', sans-serif; /* Fuente del texto */
+    line-height: 1.5;
+}
+
+.modal-content:focus {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); /* Sombra más suave */
+}
+
+textarea {
     width: 100%;
     margin-bottom: 10px;
-  }
+}
+
 
 
 /**CARRITO**/
@@ -330,6 +372,9 @@ main {
 }
 
 @media screen and (max-width: 600px) {
+    .cat-logo {
+        display: none;
+    }
     .wrapper {
         min-height: 100vh;
         display: flex;
@@ -370,7 +415,7 @@ main {
     }
 
     main {
-        background-image: url('../img/bg.jpg');
+        background-image: url('../img/bg_coffee.png');
         margin: 1rem;
         margin-top: 0;
         padding: 2rem;
@@ -517,6 +562,13 @@ main {
 
     .buscar-container {
         display: none;
+    }
+
+    .modal {
+        width: 80%; /* Ancho del modal en pantallas pequeñas */
+        height: 80%; /* Altura del modal en pantallas pequeñas */
+        max-width: 400px; /* Ancho máximo del modal en pantallas pequeñas */
+        max-height: 600px;
     }
 }
 

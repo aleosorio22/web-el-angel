@@ -74,15 +74,375 @@
         },
         {
             "categoria": "bebidas calientes",
-            "id": 8,
+            "id": 9,
             "nombre": "Té Chai",
             "descripcion": "Original, manzana canela o vainilla",
             "precio": 18.00,
             "imagen": "americano.jpg"
         },
         {
+          "categoria": "bebidas frias",
+          "id": 14,
+          "nombre": "Frapuchino",
+          "descripcion": "Chocolate o caramelo",
+          "precio": 17.00,
+          "imagen": ""
+        },
+        {
+          "categoria": "bebidas frias",
+          "id": 14,
+          "nombre": "Frapuchino moca",
+          "descripcion": "",
+          "precio": 18.00,
+          "imagen": ""
+        },
+        {
+          "categoria": "bebidas frias",
+          "id": 14,
+          "nombre": "Frapuchai",
+          "descripcion": "Original, vainilla o manzana canela",
+          "precio": 18.00,
+          "imagen": ""
+        },
+        {
+          "categoria": "bebidas frias",
+          "id": 14,
+          "nombre": "Malteada",
+          "descripcion": "Chocolate o fresa",
+          "precio": 17.00,
+          "imagen": ""
+        },
+        {
+          "categoria": "bebidas frias",
+          "id": 14,
+          "nombre": "Refrescos naturales",
+          "descripcion": "Papaya, melon, piña o sandía",
+          "precio": 10.00,
+          "imagen": ""
+        },
+        {
+          "categoria": "bebidas frias",
+          "id": 14,
+          "nombre": "Licuados",
+          "descripcion": "Cereal, fresa o banano",
+          "precio": 12.00,
+          "imagen": ""
+        },
+        {
+          "categoria": "bebidas frias",
+          "id": 14,
+          "nombre": "Naranjada",
+          "descripcion": "Simple o con soda",
+          "precio": 17.00,
+          "imagen": ""
+        },
+        {
+          "categoria": "bebidas frias",
+          "id": 14,
+          "nombre": "Naranjada frozen",
+          "descripcion": "Simple o con soda",
+          "precio": 19.00,
+          "imagen": ""
+        },  
+        {
+          "categoria": "bebidas frias",
+          "id": 14,
+          "nombre": "Limonada",
+          "descripcion": "Simple o con soda",
+          "precio": 17.00,
+          "imagen": ""
+        },
+        {
+          "categoria": "bebidas frias",
+          "id": 14,
+          "nombre": "Limonada frozen",
+          "descripcion": "Simple o con soda",
+          "precio": 19.00,
+          "imagen": ""
+        },
+        {
+          "categoria": "bebidas frias",
+          "id": 14,
+          "nombre": "Rosa de jamaica",
+          "descripcion": "Frozen",
+          "precio": 18.00,
+          "imagen": ""
+        },
+        {
+          "categoria": "bebidas frias",
+          "id": 14,
+          "nombre": "Soda en lata",
+          "descripcion": "",
+          "precio": 6.00,
+          "imagen": ""
+        },
+        {
+          "categoria": "bebidas frias",
+          "id": 14,
+          "nombre": "Jugo de naranja",
+          "descripcion": "",
+          "precio": 12.00,
+          "imagen": ""
+        },
+        {
+          "categoria": "bebidas frias",
+          "id": 14,
+          "nombre": "Para cuerpo y mente",
+          "descripcion": "Batido de jugo de naranja, zanahoria y piña",
+          "precio": 21.00,
+          "imagen": ""
+        },
+        {
+          "categoria": "bebidas frias",
+          "id": 14,
+          "nombre": "Aguacate perfecto",
+          "descripcion": "Batido de jugo de naranja, aguacate y espinaca",
+          "precio": 23.00,
+          "imagen": ""
+        },
+        {
+          "categoria": "bebidas frias",
+          "id": 14,
+          "nombre": "Sobredosis de energía",
+          "descripcion": "Batido de jugo de naranja, jugo de limón, maracuya y manzana roja",
+          "precio": 23.00,
+          "imagen": ""
+        },
+        {
+          "categoria": "bebidas frias",
+          "id": 14,
+          "nombre": "Manzana verde",
+          "descripcion": "Batido de jugo de naranja, piña, perejil, manzana verde y pepino  ",
+          "precio": 21.00,
+          "imagen": ""
+        },
+        {
+          "categoria": "desayunos",
+          "id": 14,
+          "nombre": "Huevos rancheros",
+          "descripcion": "Dos huevos estrellados acompañados con salsa roja de la casa, crema, queso, plátanos fritos y frijoles a tu elección, parados o volteados",
+          "precio": 29.00,
+          "imagen": "productos/desayunos/huevos-rancheros.jpg",
+          "horario": {
+            "inicio": "07:00",
+            "fin": "11:00"
+          }
+        },
+        {
+          "categoria": "desayunos",
+          "id": 14,
+          "nombre": "Huevos divorciados",
+          "descripcion": "Dos huevos estrellados acompañados con salsa verde y roja de la casa, queso, crema y frijoles a tu eleccion, volteados o parados",
+          "precio": 29.00,
+          "imagen": "productos/desayunos/huevos-divorciados.jpg",
+          "horario": {
+            "inicio": "07:00",
+            "fin": "11:00"
+          }
+        },
+        {
+          "categoria": "desayunos",
+          "id": 14,
+          "nombre": "Desayuno chapín",
+          "descripcion": "Huevos revueltos acompañados de longaniza, plátanos fritos, salsa roja de la casa, queso, crema y frijoles a tu elección",
+          "precio": 29.00,
+          "imagen": "productos/desayunos/chapin.jpg"
+        },
+        {
+          "categoria": "desayunos",
+          "id": 14,
+          "nombre": "Huevos campestres",
+          "descripcion": "Huevos revueltos con tomate y cebolla, plátanos fritos, queso, crema y frijoles a tu elección",
+          "precio": 29.00,
+          "imagen": "productos/desayunos/campestre.jpg"
+        },
+        {
+          "categoria": "desayunos",
+          "id": 14,
+          "nombre": "Croissant desayuno",
+          "descripcion": "Relleno con una torta de huevo, frijoles volteados, queso suizo y jamón de pavo, acompañado de hashbrown y salsa dulce",
+          "precio": 24.00,
+          "imagen": "productos/desayunos/croissant.jpg"
+        },
+        {
+          "categoria": "desayunos",
+          "id": 14,
+          "nombre": "Torta mexicana",
+          "descripcion": "Pan relleno con carne ahumada a tu elección, huevos revueltos, aguacate, aderezo chipotle, queso gratinado y hash brown",
+          "precio": 26.00,
+          "imagen": "productos/desayunos/torta-mex.jpg"
+        },
+        {
+          "categoria": "desayunos",
+          "id": 14,
+          "nombre": "Quesadilla",
+          "descripcion": "Torta de harina rellena de carne ahumada a tu elección, huevos revueltos, frijoles volteados, tres quesos, aguacate, cebolla y tomate, acompañado de hash brown o fruta",
+          "precio": 29.00,
+          "imagen": "productos/desayunos/quesadilla.jpg"
+        },
+        {
+          "categoria": "desayunos",
+          "id": 14,
+          "nombre": "Montecristo",
+          "descripcion": "Pan sándwich de la casa relleno de queso suizo, jamón de pavo, una torta de huevo acompañado de un hash brown y salsa dulce",
+          "precio": 24.00,
+          "imagen": "productos/desayunos/monte-cristo.jpg"
+        },
+        {
+          "categoria": "desayunos lights",
+          "id": 1,
+          "nombre": "Omelette light",
+          "descripcion": "Torta de claras de huevo rellena de espinaca, champiñones, queso mozarella y acompañado de fruta de temporada y pan integral de la casa",
+          "precio": 36.00,
+          "imagen": "productos/des-lights/omelette-light.jpg"
+        },     
+        {
+          "categoria": "desayunos lights",
+          "id": 1,
+          "nombre": "Huevos duros",
+          "descripcion": "Dos huevos duros, acompañados de salsa roja de la casa, plátanos cocidos y aguacate o fruta",
+          "precio": 32.00,
+          "imagen": "productos/des-lights/huevos-duros.jpg"
+        },
+        {
+          "categoria": "desayunos lights",
+          "id": 1,
+          "nombre": "Crema de papaya",
+          "descripcion": "Plato de fruta de temporada, una deliciosa crema de papaya de la casa con frutos rojos y granola",
+          "precio": 34.00,
+          "imagen": "productos/des-lights/crema-papaya.jpg"
+        },
+        {
+          "categoria": "desayunos lights",
+          "id": 1,
+          "nombre": "Plato de frutas",
+          "descripcion": "Frutas de temporada con miel de maple o de abeja",
+          "precio": 24.00,
+          "imagen": "productos/des-lights/plato-frutas.jpg"
+        },
+        {
+          "categoria": "desayunos lights",
+          "id": 1,
+          "nombre": "Avena con leche",
+          "descripcion": "Deliciosa avena preparada con leche, pasas y canela",
+          "precio": 14.00,
+          "imagen": "productos/des-lights/avena.jpg"
+        },
+        {
+          "categoria": "especialidades",
+          "id": 1,
+          "nombre": "Desayuno americano",
+          "descripcion": "Tres panqueques, dos huevos revueltos, dos lascas de tocino y acompañado de hashbrown",
+          "precio": 32.00,
+          "imagen": "productos/especialidades/des-americano.jpg"
+        },
+        {
+          "categoria": "especialidades",
+          "id": 1,
+          "nombre": "Mexican style",
+          "descripcion": "Torta de huevo de tres quesos, pollo ahumado, con chile pimiento verde, acompañado de salsa verde de la casa, plátanos fritos, crema, aguacate y frijoles a tu elección",
+          "precio": 38.00,
+          "imagen": "productos/especialidades/mexican-style.jpg"
+        },
+        {
+          "categoria": "especialidades",
+          "id": 1,
+          "nombre": "Omelette americano",
+          "descripcion": "Torta de huevo rellena de tocino y tres quesos, acompañado con salsa roja de la casa, plátanos fritos, crema y frijoles a tu elección",
+          "precio": 34.00,
+          "imagen": "productos/especialidades/omelette-americano.jpg"
+        },
+        {
+          "categoria": "especialidades",
+          "id": 1,
+          "nombre": "Desayuno español",
+          "descripcion": "Dos huevos estrellados, acompañados de papa rosty, chorizo ahumado y frijoles a tu elección",
+          "precio": 34.00,
+          "imagen": "productos/especialidades/espaniol.jpg"
+        },
+        {
+          "categoria": "especialidades",
+          "id": 1,
+          "nombre": "Texas slow",
+          "descripcion": "Dos huevo revueltos, acompañado de carne mechada de cerdo en barbacoa, papa rosty, plátanos fritos y frijoles a tu elección",
+          "precio": 39.00,
+          "imagen": "productos/especialidades/texas.jpg"
+        },
+        {
+          "categoria": "especialidades",
+          "id": 1,
+          "nombre": "Desayuno mexicano",
+          "descripcion": "Dos huevos estrellados, sobre nachos de la casa bañados con salsa verde y salsa roja, com pollo ahumado, crema y tres quesos gratinados",
+          "precio": 37.00,
+          "imagen": "productos/especialidades/mexicano.jpg"
+        },
+        {
+          "categoria": "especialidades",
+          "id": 1,
+          "nombre": "Desayuno finquero",
+          "descripcion": "4 onzas de lomito de res en fajitas, salchicha de pavo, salteados en cebolla y chile pimiento rojo y verde, acompañado de dos huevos estrellados, queso, crema, salsa roja, plátanos fritos, pan o tortilla y frijoles volteados",
+          "precio": 44.00,
+          "imagen": "productos/especialidades/finquero.jpg"
+        },
+        {
+          "categoria": "desayunos dulces",
+          "id": 1,
+          "nombre": "Tres leches hot cakes",
+          "descripcion": "Tres panqueques bañados en tres leches, crema batida y guindas",
+          "precio": 26.00,
+          "imagen": "productos/des-dulces/tres-leches-hc.jpg"
+        },
+        {
+          "categoria": "desayunos dulces",
+          "id": 1,
+          "nombre": "Nutella hot cakes",
+          "descripcion": "Tres panqueques con nutella, bañados con chocolate hershey´s, galleta oreo, fresas y crema batida",
+          "precio": 32.00,
+          "imagen": "productos/des-dulces/nutella-cakes.jpg"
+        },
+        {
+          "categoria": "desayunos dulces",
+          "id": 1,
+          "nombre": "Hot chesse cakes",
+          "descripcion": "Tres panqueques con queso crema, bañados en mermelada de fresa, crema batida, fresas y arándanos, acompañado de hash brown, miel de maple o de abeja",
+          "precio": 28.00,
+          "imagen": "productos/des-dulces/hot-chesse.jpg"
+        },
+        {
+          "categoria": "desayunos dulces",
+          "id": 1,
+          "nombre": "Waffles",
+          "descripcion": "Un delicioso Wafle con crema batida, acompañado de fresa o banano y miel a tu elección",
+          "precio": 28.00,
+          "imagen": "productos/des-dulces/waffles.jpg"
+        },
+        {
+          "categoria": "menu infantil",
+          "id": 1,
+          "nombre": "Chapincito",
+          "descripcion": "Huevos revueltos, frijoles volteados, queso, crema y jugo de naranja pequeño",
+          "precio": 24.00,
+          "imagen": "productos/infantil/chapincito.jpg"
+        },
+        {
+          "categoria": "menu infantil",
+          "id": 1,
+          "nombre": "Kid hot cakes",
+          "descripcion": "Dos panqueques acompañados de hash brown, miel de maple o de abeja, porción de fruta y jugo de naranja pequeño",
+          "precio": 26.00,
+          "imagen": "productos/infantil/kids-cakes.jpg"
+        },
+        {
+          "categoria": "menu infantil",
+          "id": 1,
+          "nombre": "Chicken nuggets",
+          "descripcion": "Tres nuggets de pollo, huevo revuelto, salsa dulce, porción de fruta y jugo de naranja pequeño",
+          "precio": 28.00,
+          "imagen": "productos/infantil/nuggets.jpg"
+        },
+        {
             "categoria": "pizzas personales",
-            "id": 9,
+            "id": 10,
             "nombre": "Pizza de Peperoni",
             "descripcion": "Con salsa roja",
             "precio": 26.00,
@@ -95,7 +455,7 @@
           },
           {
             "categoria": "pizzas personales",
-            "id": 9,
+            "id": 11,
             "nombre": "Pizza de jamon",
             "descripcion": "Con salsa roja",
             "precio": 26.00,
@@ -107,7 +467,7 @@
           },
           {
             "categoria": "pizzas personales",
-            "id": 9,
+            "id": 12,
             "nombre": "Pizza de camarón",
             "descripcion": "Con salsa blanca, cebolla y chile pimiento",
             "precio": 33.00,
@@ -119,7 +479,7 @@
           },
           {
             "categoria": "pizzas personales",
-            "id": 9,
+            "id": 13,
             "nombre": "Pizza del rancho",
             "descripcion": "Con carne asada, cebollines y salsa roja",
             "precio": 29.00,
@@ -132,7 +492,7 @@
           },
           {
             "categoria": "pizzas personales",
-            "id": 9,
+            "id": 14,
             "nombre": "Pizza de pollo",
             "descripcion": "Pollo desmenuzado, acompañado de loroco y salsa blanca",
             "precio": 29.00,
@@ -179,17 +539,161 @@
             "categoria": "postres",
             "id": 12,
             "nombre": "3 leches pequeño",
-            "descripcion": "Pastel pequeño",
+            "descripcion": "Pastel personal tres leches",
             "precio": 8.00,
-            "imagen": "americano.jpg"
+            "imagen": "productos/postres/tres-leches-peq.jpg"
           },
           {
             "categoria": "postres",
             "id": 13,
-            "nombre": "Selva negra pequeño",
-            "descripcion": "Pastel personal de selva negra",
+            "nombre": "3 leches grande",
+            "descripcion": "Pastel personal tres leches",
+            "precio": 16.00,
+            "imagen": "productos/postres/tres-leches-grande.jpg"
+          },
+          {
+            "categoria": "postres",
+            "id": 14,
+            "nombre": "Cachito relleno",
+            "descripcion": "",
+            "precio": 6.00,
+            "imagen": "productos/postres/cachito.jpg"
+          },
+          {
+            "categoria": "postres",
+            "id": 14,
+            "nombre": "Torta chilena",
+            "descripcion": "",
+            "precio": 6.00,
+            "imagen": "productos/postres/chilena.jpg"
+          },
+          {
+            "categoria": "postres",
+            "id": 14,
+            "nombre": "Cheese cake blueberry",
+            "descripcion": "",
+            "precio": 18.00,
+            "imagen": "productos/postres/ck-blueberry.jpg"
+          },
+          {
+            "categoria": "postres",
+            "id": 14,
+            "nombre": "Cheese cake limon",
+            "descripcion": "",
+            "precio": 18.00,
+            "imagen": "productos/postres/ck-limon.jpg"
+          },
+          {
+            "categoria": "postres",
+            "id": 14,
+            "nombre": "Croissant",
+            "descripcion": "",
+            "precio": 9.00,
+            "imagen": "productos/postres/croissant-postre.jpg"
+          },
+          {
+            "categoria": "postres",
+            "id": 14,
+            "nombre": "Dona rellena",
+            "descripcion": "Dona de chocolate rellena de manjar",
+            "precio": 8.00,
+            "imagen": "productos/postres/dona.jpg"
+          },
+          {
+            "categoria": "postres",
+            "id": 14,
+            "nombre": "Flan",
+            "descripcion": "",
+            "precio": 15.00,
+            "imagen": "productos/postres/flan.jpg"
+          },
+          {
+            "categoria": "postres",
+            "id": 14,
+            "nombre": "Mil hoja",
+            "descripcion": "",
             "precio": 5.00,
-            "imagen": "americano.jpg"
+            "imagen": "productos/postres/mil-hoja.jpg"
+          },
+          {
+            "categoria": "postres",
+            "id": 14,
+            "nombre": "Muffin de banano",
+            "descripcion": "",
+            "precio": 5.00,
+            "imagen": "productos/postres/muffin-ban.jpg"
+          },
+          {
+            "categoria": "postres",
+            "id": 14,
+            "nombre": "Muffin de chocolate",
+            "descripcion": "",
+            "precio": 5.00,
+            "imagen": "productos/postres/muffin-choc.jpg"
+          },
+          {
+            "categoria": "postres",
+            "id": 14,
+            "nombre": "Pie de elote",
+            "descripcion": "",
+            "precio": 16.00,
+            "imagen": "productos/postres/pie-elote.jpg"
+          },
+          {
+            "categoria": "postres",
+            "id": 14,
+            "nombre": "Pie de limon",
+            "descripcion": "",
+            "precio": 12.00,
+            "imagen": "productos/postres/pie-limon.jpg"
+          },
+          {
+            "categoria": "postres",
+            "id": 14,
+            "nombre": "Pie de queso",
+            "descripcion": "",
+            "precio": 12.00,
+            "imagen": "productos/postres/pie-queso.jpg"
+          },
+          {
+            "categoria": "postres",
+            "id": 14,
+            "nombre": "Polvorosas",
+            "descripcion": "Vainilla, café o limón",
+            "precio": 1.00,
+            "imagen": ""
+          },
+          {
+            "categoria": "postres",
+            "id": 14,
+            "nombre": "Selva negra grande",
+            "descripcion": "",
+            "precio": 16.00,
+            "imagen": "productos/postres/sn-grande.jpg"
+          },
+          {
+            "categoria": "postres",
+            "id": 14,
+            "nombre": "Selva negra pequeño",
+            "descripcion": "",
+            "precio": 8.00,
+            "imagen": "productos/postres/sn-peq.jpg"
+          },
+          {
+            "categoria": "",
+            "id": 14,
+            "nombre": "",
+            "descripcion": "",
+            "precio": 8.00,
+            "imagen": ""
+          },
+          {
+            "categoria": "",
+            "id": 14,
+            "nombre": "",
+            "descripcion": "",
+            "precio": 8.00,
+            "imagen": ""
           }
     ]
 }

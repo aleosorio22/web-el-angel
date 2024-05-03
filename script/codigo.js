@@ -5,10 +5,45 @@ document.addEventListener("DOMContentLoaded", function () {
     const tituloMain = document.querySelector(".titulo-main");
     const modal = document.getElementById("modal");
     const closeModal = document.getElementById("close-modal");
+    const nombreProductoModal = document.getElementById("nombre-producto-modal");
+    const descripcionProductoModal = document.getElementById("descripcion-producto-modal");
     const agregarCarritoBtn = document.getElementById("agregar-carrito");
     const notasTextarea = document.getElementById("notas");
     const contadorCarritoSpan = document.getElementById("numero");
-    const contadorCarritoSpanMobile = document.getElementById("numero-mobile")
+    const contadorCarritoSpanMobile = document.getElementById("numero-mobile");
+
+    //horario y verificaciones  
+    const horariosCategorias = {
+        "desayunos": { inicio: 7, fin: 11 },
+        "almuerzos": { inicio: 11.5, fin: 15 },
+        "refacciones": { inicio: 11, fin: 23 },
+        "bebidas calientes": {inicio: 7, fin: 23}
+    };
+    
+
+
+    
+
+    catMenu.querySelectorAll(".boton-categoria").forEach(boton => {
+        const categoria = boton.textContent.trim().toLowerCase();
+        if (categoriasDisponibles.includes(categoria)) {
+            boton.style.display = "block";
+        } else {
+            boton.style.display = "none";
+        }
+    });
+
+// Ocultar categorías no disponibles y mostrar categorías disponibles
+catMenu.querySelectorAll(".boton-categoria").forEach(boton => {
+    const categoria = boton.textContent.trim().toLowerCase();
+    if (categoriasDisponibles.includes(categoria)) {
+        boton.style.display = "block";
+    } else {
+        boton.style.display = "none";
+    }
+});
+
+
 
     //variables globales
     let productoActual;
@@ -39,6 +74,27 @@ document.addEventListener("DOMContentLoaded", function () {
         })
         .then(menuData => {
 
+            // Obtener hora actual
+            const horaActual = new Date().getHours();
+            const minutosActuales = new Date().getMinutes() / 60;
+
+            // Filtrar categorías disponibles según el horario
+            const categoriasDisponibles = Object.keys(horariosCategorias).filter(categoria => {
+                const horario = horariosCategorias[categoria];
+                const horaInicio = horario.inicio + (horario.inicio % 1 === 0 ? 0 : 0.5);
+                const horaFin = horario.fin + (horario.fin % 1 === 0 ? 0 : 0.5);
+                return horaActual + minutosActuales >= horaInicio && horaActual + minutosActuales <= horaFin;
+            });
+        
+            // Si hay categorías disponibles, mostrar la primera categoría disponible como predeterminada
+            if (categoriasDisponibles.length > 0) {
+                const primeraCategoriaDisponible = categoriasDisponibles[0];
+                mostrarProductosPorCategoria(primeraCategoriaDisponible);
+            } else {
+                // Si no hay categorías disponibles, mostrar un mensaje indicando que no hay categorías disponibles en este momento
+                tituloMain.textContent = "No hay categorías disponibles en este momento";
+            }
+
             cargarProductos(menuData.menu);
             actualizarTitulo("Todos los productos");
 
@@ -63,6 +119,8 @@ document.addEventListener("DOMContentLoaded", function () {
             });
         })
         .catch(error => console.error("Error al cargar el menú:", error));
+            
+        
 
     //func cargar productos
     function cargarProductos(productosElegidos) {
@@ -84,15 +142,15 @@ document.addEventListener("DOMContentLoaded", function () {
 
             const nombreProducto = document.createElement("h3");
             nombreProducto.textContent = producto.nombre;
-            nombreProducto.classList.add("producto-titulo");
+            nombreProducto.classList.add("producto-nombre");
 
             const descripcionProducto = document.createElement("p");
             descripcionProducto.textContent = producto.descripcion;
-            descripcionProducto.classList.add("producto-precio");
+            descripcionProducto.classList.add("producto-descripcion");
 
             const precioProducto = document.createElement("p");
             precioProducto.textContent = `Q${producto.precio.toFixed(2)}`;
-            precioProducto.classList.add("producto-descripcion");
+            precioProducto.classList.add("producto-precio");
 
             const botonPedir = document.createElement("button");
             botonPedir.textContent = "Agregar al carrito";
@@ -100,9 +158,12 @@ document.addEventListener("DOMContentLoaded", function () {
             botonPedir.id = producto.id;
             botonPedir.addEventListener("click", function () {
                 productoActual = producto;
+                nombreProductoModal.textContent = productoActual.nombre;
+                descripcionProductoModal.textContent = productoActual.descripcion;
                 cargarExtras(producto.extras);
                 botonPedir.id = producto.id;
                 modal.style.display = "block";
+                document.body.style.overflow = 'hidden';
             });
 
             detallesProducto.appendChild(nombreProducto);
@@ -120,7 +181,7 @@ document.addEventListener("DOMContentLoaded", function () {
     function cargarExtras(extras) {
         const extrasContainer = document.getElementById("extras-container");
         const extrasCheckboxes = document.getElementById("extras-checkboxes");
-    
+
         extrasCheckboxes.innerHTML = "";
 
         if (extras && extras.length > 0) {
@@ -151,12 +212,14 @@ document.addEventListener("DOMContentLoaded", function () {
     //func para cerrar el modal
     closeModal.addEventListener("click", function () {
         modal.style.display = "none";
+        document.body.style.overflow = '';
     });
 
     //cerrar modal cuando de clic afuera
     window.addEventListener("click", function (event) {
         if (event.target === modal) {
             modal.style.display = "none";
+            document.body.style.overflow = '';
         }
     });
 
@@ -165,6 +228,13 @@ document.addEventListener("DOMContentLoaded", function () {
         //obtener extras y notas
         const notas = notasTextarea.value;
         const extrasSeleccionados = obtenerExtrasSeleccionados();
+
+        console.log("Producto actual seleccionado:", productoActual);
+
+        const nombreProductoModal = document.getElementById("nombre-producto-modal");
+        const descripcionProductoModal = document.getElementById("descripcion-producto-modal");
+        nombreProductoModal.textContent = productoActual.nombre;
+        descripcionProductoModal.textContent = productoActual.descripcion;
 
         const extrasTexto = extrasSeleccionados.length > 0
         ? `con extras: ${extrasSeleccionados.join(", ")}`
@@ -201,6 +271,7 @@ document.addEventListener("DOMContentLoaded", function () {
         console.log(`Producto añadido al carrito: ${productoActual.nombre} con notas: ${notas} ${extrasTexto}`);
         modal.style.display = "none";
         notasTextarea.value = "";
+        document.body.style.overflow = '';
         console.log(carrito)
     });
 
