@@ -12,38 +12,6 @@ document.addEventListener("DOMContentLoaded", function () {
     const contadorCarritoSpan = document.getElementById("numero");
     const contadorCarritoSpanMobile = document.getElementById("numero-mobile");
 
-    //horario y verificaciones  
-    const horariosCategorias = {
-        "desayunos": { inicio: 7, fin: 11 },
-        "almuerzos": { inicio: 11.5, fin: 15 },
-        "refacciones": { inicio: 11, fin: 23 },
-        "bebidas calientes": {inicio: 7, fin: 23}
-    };
-    
-
-
-    
-
-    catMenu.querySelectorAll(".boton-categoria").forEach(boton => {
-        const categoria = boton.textContent.trim().toLowerCase();
-        if (categoriasDisponibles.includes(categoria)) {
-            boton.style.display = "block";
-        } else {
-            boton.style.display = "none";
-        }
-    });
-
-// Ocultar categorías no disponibles y mostrar categorías disponibles
-catMenu.querySelectorAll(".boton-categoria").forEach(boton => {
-    const categoria = boton.textContent.trim().toLowerCase();
-    if (categoriasDisponibles.includes(categoria)) {
-        boton.style.display = "block";
-    } else {
-        boton.style.display = "none";
-    }
-});
-
-
 
     //variables globales
     let productoActual;
@@ -74,27 +42,6 @@ catMenu.querySelectorAll(".boton-categoria").forEach(boton => {
         })
         .then(menuData => {
 
-            // Obtener hora actual
-            const horaActual = new Date().getHours();
-            const minutosActuales = new Date().getMinutes() / 60;
-
-            // Filtrar categorías disponibles según el horario
-            const categoriasDisponibles = Object.keys(horariosCategorias).filter(categoria => {
-                const horario = horariosCategorias[categoria];
-                const horaInicio = horario.inicio + (horario.inicio % 1 === 0 ? 0 : 0.5);
-                const horaFin = horario.fin + (horario.fin % 1 === 0 ? 0 : 0.5);
-                return horaActual + minutosActuales >= horaInicio && horaActual + minutosActuales <= horaFin;
-            });
-        
-            // Si hay categorías disponibles, mostrar la primera categoría disponible como predeterminada
-            if (categoriasDisponibles.length > 0) {
-                const primeraCategoriaDisponible = categoriasDisponibles[0];
-                mostrarProductosPorCategoria(primeraCategoriaDisponible);
-            } else {
-                // Si no hay categorías disponibles, mostrar un mensaje indicando que no hay categorías disponibles en este momento
-                tituloMain.textContent = "No hay categorías disponibles en este momento";
-            }
-
             cargarProductos(menuData.menu);
             actualizarTitulo("Todos los productos");
 
@@ -120,8 +67,6 @@ catMenu.querySelectorAll(".boton-categoria").forEach(boton => {
         })
         .catch(error => console.error("Error al cargar el menú:", error));
             
-        
-
     //func cargar productos
     function cargarProductos(productosElegidos) {
         //limpiar contenedor productos (para filtrar por categoria)
